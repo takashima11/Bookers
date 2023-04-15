@@ -4,11 +4,14 @@
 
  <h4>Title</h4>
  <%= f.text_field :title %>
- 
+
  <h4>Body</h4>
  <%= f.text_field :body %>
- 
+
  <%= f.submit 'Update Book' %>
- 
+
 <% end %>
+
+<%= link_to "Show",books_path(@book.id) %>
+<%= link_to "Back",:back %>
 
